@@ -6,7 +6,7 @@ To-Do list:
 
 1. 🟢 Create a fresh laravel Project.
 2. 🟢 Frontend Templating.
-3. 🔴 Prepare Home/Laning page and produce detail page.
+3. 🟢 Prepare Home/Laning page and produce detail page.
 4. 🔴 Prepare admin login page.
 5. 🔴 Admin login system using laravel JetStream package.
 6. 🔴 Use and connect MySQL server to the project. 
