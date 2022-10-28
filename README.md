@@ -5,7 +5,7 @@ This is the trial for final assessment for SEIP
 To-Do list:
 
 1. 🟢 Create a fresh laravel Project.
-2. 🔴 Frontend Templating.
+2. 🟢 Frontend Templating.
 3. 🔴 Prepare Home/Laning page and produce detail page.
 4. 🔴 Prepare admin login page.
 5. 🔴 Admin login system using laravel JetStream package.
