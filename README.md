@@ -8,7 +8,7 @@ To-Do list:
 2. 🟢 Frontend Templating.
 3. 🟢 Prepare Home/Laning page and produce detail page.
 4. 🔴 Prepare admin login page.
-5. 🔴 Admin login system using laravel JetStream package.
+5. 🔴 Admin login system using laravel Breeze package.
 6. 🔴 Use and connect MySQL server to the project. 
 7. 🔴 Create user login and register system.
 8. 🔴 Prepare login system and admin dashboard.
