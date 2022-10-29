@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,11 +32,4 @@ Route::middleware('auth')->group(function () {
     });
 });
 
-
-Route::get('/admin', function () {
-    return view('backend.index');
-});
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/admin', [UserController::class, 'index']);
