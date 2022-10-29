@@ -1,3 +1,17 @@
+<?php
+
+$user = Auth::user()->role_id;
+if ($user == 1) {
+    // echo ('<h1>Access denied</h1>');
+    // return;
+} else {
+    echo ('<h1>Access denied</h1>');
+    return;
+}
+?>
+
+
+
 <x-backend.master>
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
@@ -15,6 +29,7 @@
                 </button>
             </div>
         </div>
+
 
         <table class="table">
             <thead>

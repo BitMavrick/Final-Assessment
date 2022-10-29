@@ -30,6 +30,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/details', function () {
         return view('frontend.details');
     });
-});
 
-Route::get('/admin', [UserController::class, 'index']);
+    Route::get('/admin', [UserController::class, 'index']);
+});
