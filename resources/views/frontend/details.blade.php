@@ -12,10 +12,11 @@
                 <hr class="border border-primary border-3 opacity-75">
 
                 <div class="py-3">
-                    <h3>Name : Asus VivoBook S14</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptas porro maiores non
-                        dolor amet!</p>
-                    <h4>Price : $ 1,000</h4>
+                    <h3>Name : {{$product->name}}</h3>
+
+
+                    <p>{{$product->description}}</p>
+                    <h4>Price : {{$product->price}} BDT</h4>
                     <br>
 
                     <h3>Product Specifications</h3>
@@ -25,11 +26,11 @@
                         provident exercitationem consequuntur eos, soluta aliquid vitae asperiores illum cupiditate! Ex
                         odio aperiam quibusdam, nobis rerum porro reprehenderit perferendis qui. Sit maiores eveniet
                         ullam itaque, sint iste tenetur necessitatibus sed vero quos!</p>
+                    <br>
+                    <h4>Brand : {{$product->Brand_name}} | Category: {{$product->category_name}}</h4>
+
                 </div>
-
             </div>
-
-
         </div>
 
     </main>

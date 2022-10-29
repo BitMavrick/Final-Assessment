@@ -17,6 +17,22 @@ class productController extends Controller
         ]);
     }
 
+    public function show()
+    {
+        $products = Product::all();
+        return view('frontend.index', [
+            'products' => $products,
+        ]);
+    }
+
+    public function details($id)
+    {
+        $product = Product::find($id);
+        return view('frontend.details', [
+            'product' => $product,
+        ]);
+    }
+
     public function create()
     {
         return view('backend.create');

@@ -24,14 +24,8 @@ use App\Http\Controllers\productController;
 require __DIR__ . '/auth.php';
 
 Route::middleware('auth')->group(function () {
-    Route::get('/', function () {
-        return view('frontend.index');
-    })->name('home');
-
-    Route::get('/details', function () {
-        return view('frontend.details');
-    })->name('details');
-
+    Route::get('/', [productController::class, 'show'])->name('home');
+    Route::get('/details/{id}', [productController::class, 'details'])->name('details');
     Route::get('/admin', [UserController::class, 'index'])->name('admin');
     Route::get('/admin/product', [productController::class, 'index'])->name('product');
     Route::get('/admin/product/create', [productController::class, 'create'])->name('product.create');
