@@ -23,7 +23,7 @@ use App\Http\Controllers\UserController;
 require __DIR__ . '/auth.php';
 
 Route::middleware('auth')->group(function () {
-    Route::get('/home', function () {
+    Route::get('/', function () {
         return view('frontend.index');
     });
 
