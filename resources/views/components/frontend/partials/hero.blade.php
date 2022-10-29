@@ -7,8 +7,11 @@
                     creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
                     entirely.</p>
                 <p>
-                    <a href="#" class="btn btn-primary my-2">Sign up</a>
-                    <a href="#" class="btn btn-secondary my-2">Login</a>
+
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-secondary my-2">Sign Out</button>
+                </form>
                 </p>
             </div>
         </div>

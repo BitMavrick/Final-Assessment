@@ -14,9 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.index');
+    return view('welcome');
 });
 
-Route::get('/details', function () {
-    return view('frontend.details');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+require __DIR__ . '/auth.php';
+
+Route::middleware('auth')->group(function () {
+    Route::get('/home', function () {
+        return view('frontend.index');
+    });
+
+    Route::get('/details', function () {
+        return view('frontend.details');
+    });
 });
