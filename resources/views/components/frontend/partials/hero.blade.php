@@ -12,6 +12,8 @@
                     @csrf
                     <button type="submit" class="btn btn-secondary my-2">Sign Out</button>
                 </form>
+                <a href="{{ route('admin') }}"><button type="submit" class="btn btn-primary my-2">Visit Admin
+                        Panel</button></a>
                 </p>
             </div>
         </div>

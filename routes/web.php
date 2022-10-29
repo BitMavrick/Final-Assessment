@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\productController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,11 +26,12 @@ require __DIR__ . '/auth.php';
 Route::middleware('auth')->group(function () {
     Route::get('/', function () {
         return view('frontend.index');
-    });
+    })->name('home');
 
     Route::get('/details', function () {
         return view('frontend.details');
-    });
+    })->name('details');
 
-    Route::get('/admin', [UserController::class, 'index']);
+    Route::get('/admin', [UserController::class, 'index'])->name('admin');
+    Route::get('/admin/product', [productController::class, 'index'])->name('product');
 });
